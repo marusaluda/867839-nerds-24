@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Людмила Южакова](https://up.htmlacademy.ru/htmlcss/24/user/867839).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Гурьев](https://htmlacademy.ru/profile/danakishi).
 
 ---
 
