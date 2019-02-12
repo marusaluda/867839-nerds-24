@@ -17,8 +17,7 @@
   				<li><a href="contacts.html">Контакты</a></li>
   			</ul>
   			<ul class="cart-navigation">
-
-  				<li class="cart-link">Корзина</li>
+          <li class="cart-link"><a href="cart.html">Корзина</a></li>
   			</ul>
   			<h1 class="main-header-title">Магазин готовых шаблонов</h1>
   		</nav>
@@ -26,7 +25,53 @@
   	<main class="container">
   		<section class="filters">
   			<h2 class="visually-hidden">Фильтр товаров</h2>
-  			<!--Здесь будет форма -->
+  			<fieldset>
+          <legend>Сетка:</legend>
+          <form class="filter-grid" method="get" action="#">
+            <ul>
+              <li class="filter-option">
+                <input type="radio" name="grid" id="adaptive">
+                <label for="adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                <input type="radio" name="grid" id="fixed">
+                <label for="fixed">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input type="radio" name="grid" id="fluid">
+                <label for="fluid">Резиновая</label>
+              </li>
+            </ul>            
+          </form>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <form class="filter-feature" method="get" action="#">
+            <ul>
+              <li class="filter-option">
+                <input type="checkbox" name="slide" id="slide" checked>
+                <label for="slide">Слайдер</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" name="block-advantage" id="block-advantage" >
+                <label for="block-advantage">Блок преимуществ</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" name="news" id="news" checked>
+                <label for="news">Новости</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" name="gallery" id="gallery" >
+                <label for="gallery">Галерея</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" name="busket" id="busket" >
+                <label for="busket">Корзина</label>
+              </li>
+            </ul>
+            <button type="submit" class="filter-button button">Показать</button>
+          </form>
+        </fieldset>
   		</section>
   		<section class="catalog">
   			<h2 class="visually-hidden">Список готовых шаблонов</h2>
@@ -35,40 +80,70 @@
   					<a href="catalog-item.html">
   						<img src="img/sedona.jpg" width="180px" height="288px" alt="Шаблон сайта Sedona">
   					</a>
+            <section class="modal modal-catalog-item">
+              <h3 class="catalog-item-title">Sedona</h3>
+              <p class="catalog-item-info">Информационный сайт для туристов</p>
+              <a class="button button-price">9900 руб</a>
+            </section>
   				</li>
   				<li class="catalog-item">
   					<a href="catalog-item.html">
   						<img src="img/pink.jpg" width="180px" height="288px" alt="Шаблон сайта Pink App">
   					</a>
+            <section class="modal modal-catalog-item">
+              <h3 class="catalog-item-title">Pink App</h3>
+              <p class="catalog-item-info">Продуктовый лендинг приложения для iOS и Android</p>
+              <a class="button button-price">9900</a>
+            </section>
   				</li>
   				<li class="catalog-item">
   				  	<a href="catalog-item.html">
   						<img src="img/barbershop.jpg" width="180px" height="288px" alt="Шаблон сайта Барбершоп Borodinski">
   					</a>	
   				</li>
+           <section class="modal modal-catalog-item">
+              <h3 class="catalog-item-title">Barbershop</h3>
+              <p class="catalog-item-info">Сайт салона красоты. Для мужчин, да.</p>
+              <a class="button button-price">9900</a>
+            </section>
   				<li class="catalog-item">
   					<a href="catalog-item.html">
   						<img src="img/mishka.jpg" width="180px" height="288px" alt="Шаблон сайта Mishka">
   					</a>
+            <section class="modal modal-catalog-item">
+              <h3 class="catalog-item-title">MISHKA</h3>
+              <p class="catalog-item-info">Интернет-магазин вязаных игрушек</p>
+              <a class="button button-price">9900</a>
+            </section>
   				</li>
   				<li class="catalog-item">
   					<a href="catalog-item.html">
   						<img src="img/aplus.jpg" width="180px" height="288px" alt="Шаблон сайта A Plus">
   					</a>
+            <section class="modal modal-catalog-item">
+              <h3 class="catalog-item-title">A Plus</h3>
+              <p class="catalog-item-info">Лендинг курсов повышения квалификации</p>
+              <a class="button button-price">9900</a>
+            </section>
   				</li>
   				<li class="catalog-item">
   					<a href="catalog-item.html">
   						<img src="img/kvast.jpg" width="180px" height="288px" alt="Шаблон сайта Кваст">
   					</a>
+            <section class="modal modal-catalog-item">
+              <h3 class="catalog-item-title">КВАСТ</h3>
+              <p class="catalog-item-info">Промо-сайт производителя крафтового кваса</p>
+              <a class="button button-price">9900</a>
+            </section>
   				</li>
   			</ul>
   		</section>
   		<footer class="main-footer">
   		<div class="footer-social">
   			<ul>
-  				<li><a class="social-button" href="#">Vkontakte</a></li>
-  				<li><a class="social-button" href="#">Facebook</a></li>
-  				<li><a class="social-button" href="#">Instagram</a></li>
+  				<li><a class="social-button" href="#" aria-label="Нердс во Вконтакте">Vkontakte</a></li>
+  				<li><a class="social-button" href="#" aria-label="Нердс на Facebook">Facebook</a></li>
+  				<li><a class="social-button" href="#" aria-label="Нердс в Instagram">Instagram</a></li>
   			</ul>
   		</div>
   		<div class="footer-offer">
