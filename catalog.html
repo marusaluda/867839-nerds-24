@@ -25,53 +25,51 @@
   	<main class="container">
   		<section class="filters">
   			<h2 class="visually-hidden">Фильтр товаров</h2>
-  			<fieldset>
-          <legend>Сетка:</legend>
-          <form class="filter-grid" method="get" action="#">
+        <form class="filter" method="get" action="#">
+    			<fieldset>
+            <legend>Сетка:</legend>
             <ul>
               <li class="filter-option">
-                <input type="radio" name="grid" id="adaptive">
-                <label for="adaptive">Адаптивная</label>
+              <input class="filter-input filter-input-radio " type="radio" name="grid" id="adaptive">
+               <label for="adaptive">Адаптивная</label>
               </li>
               <li class="filter-option">
-                <input type="radio" name="grid" id="fixed">
+                <input class="filter-input filter-input-radio" type="radio" name="grid" id="fixed">
                 <label for="fixed">Фиксированная</label>
               </li>
               <li class="filter-option">
-                <input type="radio" name="grid" id="fluid">
+                <input class="filter-input filter-input-radio"  type="radio" name="grid" id="fluid">
                 <label for="fluid">Резиновая</label>
               </li>
             </ul>            
-          </form>
-        </fieldset>
-        <fieldset>
-          <legend>Особенности:</legend>
-          <form class="filter-feature" method="get" action="#">
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
             <ul>
               <li class="filter-option">
-                <input type="checkbox" name="slide" id="slide" checked>
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="slide" id="slide" checked>
                 <label for="slide">Слайдер</label>
               </li>
-              <li class="filter-option">
-                <input type="checkbox" name="block-advantage" id="block-advantage" >
+              <li class="filter-option">                  
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="block-advantage" id="block-advantage" >
                 <label for="block-advantage">Блок преимуществ</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" name="news" id="news" checked>
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="news" id="news" checked>
                 <label for="news">Новости</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" name="gallery" id="gallery" >
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="gallery" >
                 <label for="gallery">Галерея</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" name="busket" id="busket" >
-                <label for="busket">Корзина</label>
+               <input class="filter-input filter-input-checkbox" type="checkbox" name="busket" id="busket" >
+               <label for="busket">Корзина</label>
               </li>
             </ul>
             <button type="submit" class="filter-button button">Показать</button>
-          </form>
-        </fieldset>
+          </fieldset>
+        </form>
   		</section>
   		<section class="catalog">
   			<h2 class="visually-hidden">Список готовых шаблонов</h2>
