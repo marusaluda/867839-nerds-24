@@ -3,7 +3,7 @@ body {
 	font-size: 16px;
 	line-height: 24px;
 	
-	color: #283136; /* Насколько я поняла, что "большинство" текста на странице в этом цвете и его стоит оставлять?*/
+	color: #283136;
 }
 
 a {
@@ -33,18 +33,61 @@ a {
 	color: rgba(255, 255, 255, 0.5);
 }
 
+.main-header {
+	margin-bottom: 60px;
+	background-color: #eeeeee;
+}
+
 .main-navigation {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+
 	font-size: 16px;
 	line-height: 30px;
 	font-weight: 500;
 	color: #000000;
 	text-transform: uppercase;
 
+	
 	background-color: #eeeeee;
+}
+
+.main-header-logo {
+	width: 80px;
+	height: 32.5px;
+	padding: 50px 20px;
+}
+
+.main-navigation-wrapper {
+	width: 100%;
+}
+
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.main-navigation-wrapper .container {
+	display: flex;
+	justify-content: space-between;
 }
 
 .main-navigation h1 {
 	text-align: center;
+}
+
+.site-navigation {
+	width: 860px;
+	padding: 0;
+	margin: 0;
+}
+
+.cart-navigation {
+	width: 200px;
+	padding: 0;
+	margin-left: auto;
 }
 
 .site-navigation,
@@ -68,16 +111,53 @@ a {
 	color: #bababa;
 }
 
+.catalog-page .main-header-title {
+	display: flex;
+	justify-content: center;
+	padding: 60px 0;
+}
+
 .category {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 
+.category-item {
+	width: 300px;
+	height: 145px;
+	align-items: center;
+}
 
 .category-item h3 {
 	font-size: 24px;
 	line-height: 30px;
 	color: #000000;
+
 	text-transform: uppercase;
+}
+
+.main-category {
+	margin-bottom: 160px;
+}
+
+.index-columns {
+	display: flex;
+	justify-content: space-between;
+	padding: 80px 0;
+	margin: 0;
+}
+
+.advantages {
+	width: 660px;
+}
+
+.advantages-percents {
+	width: 380px;
+	text-align: center;
 }
 
 .button-apps {
@@ -124,7 +204,7 @@ a {
 }
 
 .advantages-list,
-.advantages-percents {
+.advantages-list-percents {
 	list-style: none;
 }
 
@@ -133,6 +213,20 @@ a {
 	line-height: 10,06px;
 	font-weight: 700;
 	color: #000000;
+}
+
+.companies-clients {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	margin-bottom: 80px;
+	padding: 0;
+
+	list-style: none;
+}
+
+.companies-item {
+	align-items: center;
 }
 
 .filter fieldset {
@@ -204,6 +298,29 @@ a {
 	display: none;
 }
 
+
+.main-footer {
+	padding: 65px 0;
+	margin-top: 70px;
+}
+
+.main-footer .container {
+	display: flex;
+}
+
+.footer-social {
+	width: 260px;
+	margin: 0;
+	margin-right: 140px;
+}
+
+.footer-offer {
+	width: 550px;
+	margin: 0;
+}
 .footer-social ul {
 	list-style: none;
 }
+
+
+
